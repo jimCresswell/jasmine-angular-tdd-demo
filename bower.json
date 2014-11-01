@@ -1,0 +1,17 @@
+{
+  "name": "jasmine-bdd-demo",
+  "version": "0.0.0",
+  "authors": [
+    "jimCresswell <jim.cresswell@gmail.com>"
+  ],
+  "description": "playing with Jasmine and Angular",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

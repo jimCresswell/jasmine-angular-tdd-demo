@@ -1,0 +1,15 @@
+{
+  "name": "jasmine-bdd-demo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "playing with jasmine and bdd",
+  "main": " ",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "~2.0.1"
+  }
+}
