@@ -14,9 +14,9 @@
 
         function getExpenses() {
             return [
-                {title: 'Taxi', description: 'blah', amount: 89.95},
-                {title: 'Lunch', description: 'foods', amount: 15.40},
-                {title: 'Coffee', description: 'tree fitty', amount: 3.50},
+                new ExpenseItem('Taxi', 'blah', 89.95),
+                new ExpenseItem('Lunch', 'foods', 15.40),
+                new ExpenseItem('Coffee', 'tree fitty', 3.50),
             ];
         }
     }
