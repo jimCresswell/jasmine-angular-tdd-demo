@@ -1,1 +1,3 @@
-function ExpenseItem(){}
+function ExpenseItem(expenseAmount) {
+    this.amount = expenseAmount;
+}
