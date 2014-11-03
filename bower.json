@@ -1,10 +1,10 @@
 {
-  "name": "jasmine-bdd-demo",
+  "name": "jasmine-tdd-demo",
   "version": "0.0.0",
   "authors": [
     "jimCresswell <jim.cresswell@gmail.com>"
   ],
-  "description": "playing with Jasmine and Angular",
+  "description": "playing with Jasmine, Angular and TDD",
   "license": "MIT",
   "private": true,
   "ignore": [
