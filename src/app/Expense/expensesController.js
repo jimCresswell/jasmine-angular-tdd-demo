@@ -1,9 +1,9 @@
 (function(){
     'use strict';
 
-    angular.module('app').controller('expensesController', [expensesController]);
+    angular.module('app').controller('expensesController', ['expensesDataService', expensesController]);
 
-    function expensesController() {
+    function expensesController(expensesDataService) {
 
         var vm = this;
 
@@ -13,11 +13,7 @@
         activate();
 
         function activate(){
-            return vm.expenseItems = [
-                {title: 'Taxi', description: 'blah', amount: 89.95},
-                {title: 'Lunch', description: 'foods', amount: 15.40},
-                {title: 'Coffee', description: 'tree fitty', amount: 3.50},
-            ];
+            vm.expenseItems = expensesDataService.getExpenses();
         }
     };
 })();
