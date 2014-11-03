@@ -2,6 +2,10 @@ describe('expensesDataService', function() {
 
     beforeEach(module('app'));
 
+    beforeEach(function() {
+        jasmine.addMatchers(customMatchers);
+    });
+
     it('Should return three expense items', inject(function(expensesDataService) {
         expect(expensesDataService.getExpenses().length).toBe(3);
     }));
@@ -14,4 +18,8 @@ describe('expensesDataService', function() {
        expect(expenseItems).toContain(testExpenseItem);
     }));
 
+    it('taxi should be a reasonable price', function() {
+        var taxi = new ExpenseItem('Taxi', 'blah', 89.95);
+        expect(taxi).toBeAReasonableExpense();
+    })
 });
