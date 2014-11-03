@@ -7,7 +7,8 @@
 
     function expensesDataService($http) {
         var service = {
-            getExpenses: getExpenses
+            getExpenses: getExpenses,
+            persistExpenses: persistExpenses
         };
 
         return service;
@@ -18,6 +19,15 @@
                 new ExpenseItem('Lunch', 'foods', 15.40),
                 new ExpenseItem('Coffee', 'tree fitty', 3.50),
             ];
+        }
+
+        function persistExpenses(reportExpenses) {
+            // do imaginary work
+
+            var success = true;
+            if (success) {
+                reportExpenses();
+            }
         }
     }
 })();
